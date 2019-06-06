@@ -1,0 +1,17 @@
+.navbar{
+  background: orangered;
+}
+.navbar .navbar-brand,
+.navbar .nav-item .nav-link {
+  color: white;
+  font-family: 'Indie Flower', cursive;
+  transition: 1s;
+}
+.navbar .navbar-brand:hover {
+  color: yellow;
+  font-size: 23px;
+}
+.navbar .nav-item .nav-link:hover {
+  color: yellow;
+  font-size: 18px;
+}
