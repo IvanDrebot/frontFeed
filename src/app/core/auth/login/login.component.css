@@ -1,0 +1,11 @@
+.main{
+  margin: 0 auto;
+  height: border-box;
+  width: 1000px;
+}
+.login{
+  margin: 20px 0 0 35%;
+}
+input{
+  width: 300px;
+}

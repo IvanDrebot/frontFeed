@@ -1,0 +1,43 @@
+.feed, .newFeed{
+  margin: 30px 15px 0 15px;
+}
+
+.feed .add{
+  margin-top: 20px;
+}
+
+input{
+  width: 300px;
+}
+a{
+  text-decoration: none;
+  font-size: 20px;
+  transition: 1s;
+}
+a:hover{
+  color: midnightblue;
+}
+
+p{
+  margin-top: 10px;
+  text-align: center;
+}
+
+.item {
+  display: flex;
+  justify-content: space-between;
+  padding: 5px 10px;
+  margin: 10px 0;
+  border-radius: 3px;
+  background: lightgray;
+}
+
+.control button{
+  background: red;
+  color: white;
+  width: 80px;
+  height: 40px;
+}
+button[type='reset']{
+  margin-left: 5px;
+}

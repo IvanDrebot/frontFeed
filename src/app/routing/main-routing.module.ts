@@ -1,18 +1,19 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import {LoginComponent} from '../core/login/login.component';
+import {LoginComponent} from '../core/auth/login/login.component';
 import {RouterModule, Routes} from '@angular/router';
 import {FeedsComponent} from '../core/feed/feeds.component';
-import {LogoutComponent} from '../core/logout/logout.component';
-import {ArticleListComponent} from '../core/article/article-list/article-list.component';
-import {SingleArticleComponent} from '../core/article/single-article/single-article.component';
+import {LogoutComponent} from '../core/auth/logout/logout.component';
+import {SingleArticleComponent} from '../core/article/single-article.component';
+import {SingleFeedComponent} from '../core/feed/single-feed/single-feed.component';
+import {InfoComponent} from '../core/info/info.component';
 
 const routes: Routes = [
-  {path: 'register', component: LoginComponent},
+  {path: 'info', component: InfoComponent},
   {path: 'login', component: LoginComponent},
   {path: 'logout', component: LogoutComponent},
   {path: 'feed-list', component: FeedsComponent},
-  {path: 'article', component: ArticleListComponent},
+  {path: 'single-feed/:id', component: SingleFeedComponent},
   {path: 'single-article', component: SingleArticleComponent}
 ];
 

@@ -1,0 +1,17 @@
+div{
+  width: 1000px;
+  height: border-box;
+  background: gray;
+  margin: 0 auto;
+  margin-top: 10px;
+  padding: 10px;
+}
+h3{
+  text-align: center;
+}
+a{
+  color: black;
+}
+a:hover{
+  color: white;
+}

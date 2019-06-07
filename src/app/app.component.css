@@ -1,5 +1,5 @@
 .navbar{
-  background: orangered;
+  background: blue;
 }
 .navbar .navbar-brand,
 .navbar .nav-item .nav-link {
@@ -8,10 +8,10 @@
   transition: 1s;
 }
 .navbar .navbar-brand:hover {
-  color: yellow;
+  color: gray;
   font-size: 23px;
 }
 .navbar .nav-item .nav-link:hover {
-  color: yellow;
+  color: gray;
   font-size: 18px;
 }

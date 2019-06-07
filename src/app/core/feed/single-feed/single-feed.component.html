@@ -1,0 +1,6 @@
+<div *ngFor="let feed of feed">
+  <h3>{{feed.title}}</h3><hr>
+  <b>User: {{feed.userName}}</b><br>
+  <b>Url: <a href="{{feed.url}}">{{feed.url}}</a></b><br>
+  <b>Date: {{feed.date | date}}</b><hr>
+</div>
