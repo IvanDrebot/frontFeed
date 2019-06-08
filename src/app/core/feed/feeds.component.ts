@@ -54,6 +54,5 @@ export class FeedsComponent implements OnInit {
       const index = this.feeds.findIndex(x => x.id === id);
       this.feeds.splice(index, 1);
     }
-
   }
 }

@@ -1,7 +1,9 @@
 <div class="feed">
   <div class="item" *ngFor="let feed of feeds">
     <span>
-      <a [routerLink]="'/single-feed/' + feed.id">
+      <a [routerLink]="['/single-feed/' + feed.id]"
+         [queryParams]="{title: feed.title}"
+         queryParamsHandling="merge">
         {{feed.title}}<br>
       </a>
     </span>

@@ -2,6 +2,7 @@ import { Injectable } from '@angular/core';
 import {HttpClient} from '@angular/common/http';
 import {Observable} from 'rxjs';
 import {Feed} from '../models/Feed';
+import {addParams} from '../urlParser/parser';
 
 @Injectable({
   providedIn: 'root'
@@ -21,8 +22,9 @@ export class FeedsService {
     return this.http.get<Feed[]>(this.feedUrl);
   }
 
-  fetchFeedById(id) {
-    return this.http.get(this.feedUrl + '/' + id);
+  fetchFeedById(id, query = {}) {
+    const url = addParams(this.feedUrl + '/' + id, query);
+    return this.http.get(url);
   }
 
   createFeed(feed: Feed) {

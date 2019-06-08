@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import {DataService} from '../../services/dataService';
 
 @Component({
   selector: 'app-single-article',
@@ -7,9 +8,17 @@ import { Component, OnInit } from '@angular/core';
 })
 export class SingleArticleComponent implements OnInit {
 
-  constructor() { }
+  singleArticle: any;
+
+  constructor(
+    private dataService: DataService
+  ) { }
 
   ngOnInit() {
+    this.dataService.subject.subscribe(res => {
+      this.singleArticle = res;
+      console.log(this.singleArticle);
+    });
   }
 
 }

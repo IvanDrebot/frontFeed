@@ -1,3 +1,7 @@
-<p>
-  single-article works!
-</p>
+<div>
+  <p *ngFor="let article of singleArticle">
+    <span *ngFor="let item of article.title">
+      {{item}}
+    </span>
+  </p>
+</div>

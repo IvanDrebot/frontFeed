@@ -1,6 +1,16 @@
 <div *ngFor="let feed of feed">
-  <h3>{{feed.title}}</h3><hr>
+  <h3>{{feed.title}}</h3>
+  <hr>
   <b>User: {{feed.userName}}</b><br>
-  <b>Url: <a href="{{feed.url}}">{{feed.url}}</a></b><br>
-  <b>Date: {{feed.date | date}}</b><hr>
+  <b>Date: {{feed.date | date}}</b>
+  <hr>
+  <ul *ngFor="let article of articles.rss.channel">
+    <li *ngFor="let title of article.item">
+      <a routerLink="/single-article" (click)="getSingleArticle(this.title)">
+        {{title.title}}<br>
+        {{title.description}}<br><br><br>
+      </a>
+    </li>
+  </ul>
+  <hr>
 </div>
